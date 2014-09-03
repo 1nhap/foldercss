@@ -55,8 +55,8 @@ right: 0;
 
 #slideshow .nivo-directionNav a {
 	display:block;
-	width:43px;
-	height:43px;
+	width:30px;
+	height:36px;
 	background:url(images/slider-arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
@@ -68,7 +68,7 @@ right: 0;
 }
 #slideshow:hover .nivo-directionNav a { opacity: 1; }
 #slideshow a.nivo-nextNav {
-	background-position:-50px 0;
+	background-position:-29px 0;
 	right:15px;
 }
 #slideshow a.nivo-prevNav {
