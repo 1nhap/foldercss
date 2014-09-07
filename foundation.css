@@ -731,10 +731,9 @@ select {
   .pull-11 {
     position: relative;
     right: 91.66667%;
-    left: auto; } }@media only screen and (min-device-width : 360px) and (max-device-width : 598px) { 
+    left: auto; } }@media only screen and (min-width: 37em) {
 	.win-6{width: 50%;}
-}
-@media only screen and (min-width: 64.063em) {
+}@media only screen and (min-width: 64.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
