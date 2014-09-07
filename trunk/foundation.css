@@ -732,7 +732,7 @@ select {
     position: relative;
     right: 91.66667%;
     left: auto; } }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width : 604px) {
 	.win-6{width: 50%;}
 }
 @media only screen and (min-width: 64.063em) {
