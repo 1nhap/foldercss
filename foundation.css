@@ -382,7 +382,9 @@ select {
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
     float: right; } }
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 37em) {
+	.win-6{width: 50%;}
+}@media only screen and (min-width: 40.063em) {
   .medium-push-0 {
     position: relative;
     left: 0%;
@@ -731,9 +733,7 @@ select {
   .pull-11 {
     position: relative;
     right: 91.66667%;
-    left: auto; } }@media only screen and (min-width: 37em) {
-	.win-6{width: 50%;}
-}@media only screen and (min-width: 64.063em) {
+    left: auto; } }@media only screen and (min-width: 64.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
