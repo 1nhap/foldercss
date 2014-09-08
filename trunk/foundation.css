@@ -1530,9 +1530,9 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 66.80em) {
   .top-bar {
-    background: #333333;
+    background: #007DA;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -1635,7 +1635,7 @@ meta.foundation-mq-topbar {
         line-height: 45px;
         white-space: nowrap;
         padding: 12px 15px;
-        background: #333333; }
+        background: #007DA; }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
         color: white;
         background: #333333; }
