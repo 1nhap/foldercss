@@ -1532,7 +1532,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 66.80em) {
   .top-bar {
-    background: #007DA;
+    background: #007DAD;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
