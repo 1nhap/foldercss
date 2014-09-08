@@ -1270,7 +1270,7 @@ meta.foundation-mq-topbar {
     margin-bottom: 0;
     list-style: none; }
   .top-bar .row {
-     }
+    max-width: none; }
   .top-bar form,
   .top-bar input {
     margin-bottom: 0; }
@@ -1529,9 +1529,10 @@ meta.foundation-mq-topbar {
 
 .js-generated {
   display: block; }
-@media only screen and (min-width: 900px;) {
+
+@media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #007DAD;
+    background: #333333;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -1576,7 +1577,7 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #007DAD; }
+      background: #333333; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
         background: #272727; }
@@ -1685,8 +1686,6 @@ meta.foundation-mq-topbar {
     overflow: visible;
     clip: auto;
     position: absolute !important; } }
-
-  
 .breadcrumbs {
   display: block;
   padding: 0.5625rem 0.875rem 0.5625rem;
