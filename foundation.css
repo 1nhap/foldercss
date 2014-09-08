@@ -1529,7 +1529,7 @@ meta.foundation-mq-topbar {
 
 .js-generated {
   display: block; }
-@media only screen and (min-width: 1000px;) {
+@media only screen and (min-width: 900px;) {
   .top-bar {
     background: #007DAD;
     overflow: visible; }
