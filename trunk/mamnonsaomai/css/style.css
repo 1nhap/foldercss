@@ -51,7 +51,7 @@ margin-left: 15px;
 .w-right{
 	float: right;
 	width: 240px;
-	background: url(../images/huou.png) top right no-repeat;
+	/*background: url(../images/huou.png) top right no-repeat;*/
 }
 }
 .w_page_content{
@@ -398,15 +398,15 @@ text-transform: uppercase;
 	margin-bottom: 15px;
 }
 .block_title {
-padding: 22px 0px 13px 49px;
+border-bottom: 2px solid #63D84B;
 font-weight: bold;
 }
 .block_content{
 	background:none;
 	padding: 5px;	
-	border-top: 0px;
+	border: 1px solid #e5e5e5;
 }
-.icon1{
+/*.icon1{
 		
 	color: rgb(245, 39, 0);
 }
@@ -476,7 +476,7 @@ background: url(../images/icon8.png) 6px 0px no-repeat;
 margin-left: 15px;
 padding-left: 55px;
 padding-right: 8px;
-}
+}*/
 .nhatkycuabe{
 	background: url(../images/nhatkycuabe.jpg) top center no-repeat;
 	height: 280px;
