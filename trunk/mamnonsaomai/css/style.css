@@ -807,6 +807,13 @@ top: 15px;
 .t_center{text-align:center;}
 .contacUs .submit_btn { margin: 10px 0px; padding: 5px 14px; border: 1px solid #ccc; 	background: #3695c1;
 	color:#fff;}
+.foo_face{
+	width: 700px;
+	background: transparent url('../images/foo_face.png');
+	position: absolute;
+	height: 170px;
+	top: 124px;
+}
 /*************************/
 .social-icons {	 
 	 padding: 10px;
