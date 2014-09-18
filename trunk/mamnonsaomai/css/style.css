@@ -400,7 +400,7 @@ padding: 22px 0px 13px 49px;
 font-weight: bold;
 }
 .block_content{
-	background-color: #fff;
+	background:none;
 	padding: 5px;
 	margin-bottom: 20px;
 	border-top: 0px;
