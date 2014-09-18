@@ -37,7 +37,7 @@ body {
 	width: 1100px;
 	margin: 0px auto;
 }
-.w-page{	background: url("../images/foo.jpg") bottom center no-repeat;}
+.w-page{	background: url("../images/foo.jpg") right bottom no-repeat;}
 .w-content{min-height: 500px;width: 1080px;}
 .w-left{
 	float: left;
