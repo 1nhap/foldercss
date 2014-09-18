@@ -775,7 +775,10 @@ bottom: 15px;
 	font-size: 15px;
 }
 #cp_contact_form { padding: 0; width: 400px }
-.contacUs { margin: 0px; padding: 0px; }
+.contacUs { margin: 0px; padding: 0px; position: absolute;
+left: 40px;
+top: 15px;
+}
 
 .contacUs .input_field { 
 	width: 400px; 
