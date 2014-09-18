@@ -44,7 +44,7 @@ body {
 	width: 240px;
 }
 .w-center{
-	float: left;width: 580px;
+	float: left;width: 570px;
 
 margin-left: 15px;
 }
@@ -433,10 +433,8 @@ font-weight: bold;
 	border-radius: 5px;
 	color: rgb(245, 39, 0);}
 .icon1 .block_title {
-background: url(../images/icon1.png) 6px 0px no-repeat;
-margin-left: 15px;
-padding-left: 55px;
-padding-right: 8px;
+padding-left: 0px;
+padding-right: 8px;text-transform: uppercase;
 }
 .icon2 .block_title {
 background: url(../images/icon2.png) 6px 0px no-repeat;
