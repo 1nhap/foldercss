@@ -765,38 +765,9 @@ width: 1100px;
 margin: 0px auto;
 	color: #fff;
 }
-.footer li{color: #858484;}
-.table_link {
-color: #555555;
-margin: 0 10px;
-float: left;
-padding: 5px 28px;
-border-left: 1px solid rgba(153, 153, 153, 0.13);
-}
-.table_link:first-child{
-	border-left: 0px;
-}
-.mod-title {
-color: #fff;
-font-size: 1.2em;
-text-transform: uppercase;
-margin: 0.2em 0 0.3em 0;
-}
-.table_link ul li {
-padding: 2px 0;
-}
-.table_link ul li a{
-	color: #858484;
-font-size: 0.875em;
-}
-.table_link ul li a:hover{
-	color:#007DAD;
-}
-.footer .hotline{
-	font-size: 25px;
-	color: #007DAD;
-	display: block;
-	text-align: center;
+.bt_foo {
+position: absolute;
+bottom: 15px;
 }
 .content_footer{
 	border-top: 1px solid rgba(153, 153, 153, 0.13);
