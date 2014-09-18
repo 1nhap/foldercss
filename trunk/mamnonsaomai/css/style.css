@@ -478,7 +478,7 @@ padding-left: 55px;
 padding-right: 8px;
 }*/
 .nhatkycuabe{
-	background: url(../images/owf.png) top center no-repeat;
+	background: url(../images/owl.png) top center no-repeat;
 	height: 222px;
 	position: relative;
 }
@@ -488,10 +488,10 @@ padding-right: 8px;
     top: 95px;
 }
 .ul_nhatky li{
-    padding: 3px;
+    padding: 0px 3px;
 }
 .ul_nhatky a{
-    color: rgb(21, 178, 218);
+    color: rgb(21, 178, 218);font-size: 14px;
 }
 .ul_nhatky a:hover{color:#333;}
 .item_block{
