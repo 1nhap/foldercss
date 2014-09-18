@@ -772,14 +772,14 @@ bottom: 15px;
 	text-align: center;
 	font-size: 15px;
 }
-#cp_contact_form { padding: 0; width: 400px }
+#cp_contact_form { padding: 0; width: 304px; }
 .contacUs { margin: 0px; padding: 0px; position: absolute;
 left: 10px;
 top: 15px;
 }
 
 .contacUs .input_field { 
-	width: 400px; 
+	width: 290px; 
 	font-size: 12px;
 	color: #333;
 	padding: 5px; 
@@ -791,7 +791,7 @@ top: 15px;
 .contacUs label { display: block; width: 220px; margin-right: 10px; font-size: 12px; color: #3695c1; }
 
 .contacUs textarea { 
-	width: 400px; 
+	width: 290px; 
 	height: 70px; 
 	padding: 5px; 
 	color: #333; 
@@ -800,7 +800,7 @@ top: 15px;
 	font-size: 11px;
 	font-family: Tahoma, Geneva, sans-serif;
 }
-
+.t_center{text-align:center;}
 .contacUs .submit_btn { margin: 10px 0px; padding: 5px 14px; border: 1px solid #ccc; 	background: #3695c1;
 	color:#fff;}
 /*************************/
