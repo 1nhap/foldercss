@@ -478,14 +478,14 @@ padding-left: 55px;
 padding-right: 8px;
 }*/
 .nhatkycuabe{
-	background: url(../images/nhatkycuabe.jpg) top center no-repeat;
-	height: 280px;
+	background: url(../images/owf.png) top center no-repeat;
+	height: 222px;
 	position: relative;
 }
 .ul_nhatky{
     position: absolute;
-    left: 60px;
-    top: 171px;
+    left: 80px;
+    top: 95px;
 }
 .ul_nhatky li{
     padding: 3px;
