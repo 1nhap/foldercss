@@ -774,6 +774,34 @@ bottom: 15px;
 	text-align: center;
 	font-size: 15px;
 }
+#cp_contact_form { padding: 0; width: 400px }
+.contacUs { margin: 0px; padding: 0px; }
+
+.contacUs .input_field { 
+	width: 400px; 
+	font-size: 12px;
+	color: #333;
+	padding: 5px; 
+	height: 20px; 
+	border: 1px solid #ccc;  
+	background: #fff; 
+}
+
+.contacUs label { display: block; width: 220px; margin-right: 10px; font-size: 12px; color: #3695c1; }
+
+.contacUs textarea { 
+	width: 400px; 
+	height: 70px; 
+	padding: 5px; 
+	color: #333; 
+	border: 1px solid #ccc;
+	background: #fff; 
+	font-size: 11px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.contacUs .submit_btn { margin: 10px 0px; padding: 5px 14px; border: 1px solid #ccc; 	background: #3695c1;
+	color:#fff;}
 /*************************/
 .social-icons {	 
 	 padding: 10px;
