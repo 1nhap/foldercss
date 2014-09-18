@@ -51,6 +51,8 @@ margin-left: 15px;
 .w-right{
 	float: right;
 	width: 240px;
+	background: url(../images/huou.png) top right no-repeat;
+}
 }
 .w_page_content{
 	padding: 10px;
@@ -406,8 +408,7 @@ font-weight: bold;
 	border-top: 0px;
 }
 .icon1{
-	border: 2px dashed rgb(0, 245, 69);
-	border-radius: 5px;
+		
 	color: rgb(245, 39, 0);
 }
 .icon2{border: 2px dashed rgb(238, 108, 35);
