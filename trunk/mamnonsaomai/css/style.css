@@ -776,7 +776,7 @@ bottom: 15px;
 }
 #cp_contact_form { padding: 0; width: 400px }
 .contacUs { margin: 0px; padding: 0px; position: absolute;
-left: 40px;
+left: 10px;
 top: 15px;
 }
 
@@ -787,7 +787,7 @@ top: 15px;
 	padding: 5px; 
 	height: 20px; 
 	border: 1px solid #ccc;  
-	background: #fff; 
+	background: none; 
 }
 
 .contacUs label { display: block; width: 220px; margin-right: 10px; font-size: 12px; color: #3695c1; }
@@ -798,7 +798,7 @@ top: 15px;
 	padding: 5px; 
 	color: #333; 
 	border: 1px solid #ccc;
-	background: #fff; 
+	background: none; 
 	font-size: 11px;
 	font-family: Tahoma, Geneva, sans-serif;
 }
