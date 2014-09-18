@@ -759,8 +759,10 @@ border-bottom: 0.1244em dashed rgba(202, 202, 202, 0.41);
 }
 /****************************************************/
 .footer{
-	min-height: 360px;
-
+	min-height: 420px;
+position: relative;
+width: 1100px;
+margin: 0px auto;
 	color: #fff;
 }
 .footer li{color: #858484;}
