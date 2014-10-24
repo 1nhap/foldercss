@@ -416,7 +416,59 @@ height: 27px;
 	padding: 10px 4px;
 }
 /*************************************/
+.s_content .slide img{height: 100px;}
+.s_content .slide .th{margin-top: 1px;}
+.s_content .slide a{
+	color: #2a6496;
+	font-size: 12px;
+	font-weight: normal;
+}
+.s_title{
+	border-left: 4px solid red;	
+	padding-left: 15px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+	position: relative;
+}
 
+.s_title ul{
+	position: absolute;
+	top: 5px;
+	right: 3px;
+}
+.s_title li{
+	float: left;padding: 0px 2px;
+}
+.s_title a {
+	float: left;
+	width: 7px;
+	height:11px;
+	background-repeat: no-repeat;
+	text-indent: -1000000px;
+}
+.s_title a._prev {
+	background: url(../images/control-slider.png);
+	background-position: 0px 0px;
+}
+.s_title a._next {
+	background: url(../images/control-slider.png);
+	background-position: -7px 0px;
+}
+.s_title a._prev:hover {
+	background: url(../images/control-slider.png);
+	background-position: 0px -11px;
+}
+.s_title a._next:hover {
+	background: url(../images/control-slider.png);
+	background-position: -7px -11px;
+}
+
+.s_content{
+	
+}
+.bx-controls {display: none;}
+.bx-wrapper{margin: 0px auto;}
+.bx-wrapper .bx-viewport{left: 0px;}
 
 
 
