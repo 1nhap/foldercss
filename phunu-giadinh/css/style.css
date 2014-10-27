@@ -416,7 +416,7 @@ height: 27px;
 	padding: 10px 4px;
 }
 /*************************************/
-.slides li{text-align: center;}
+.slides li{text-align: center;float:left;}
 .s_content .slide img,.slides img{height: 100px;display: block;}
 .s_content .slide .th,.slides .th{margin-top: 1px;}
 .s_content .slide a,.slides a{
