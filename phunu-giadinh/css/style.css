@@ -481,7 +481,7 @@ height: 27px;
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a  {background:url("../images/bg_direction_nav.png") no-repeat; text-decoration:none; display: block; width: 27px; height: 27px; text-indent:-9999px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
+.flex-direction-nav a  {background:url("../images/bg_direction_nav.png") no-repeat; text-decoration:none; display: block; width: 27px; height: 27px; text-indent:-9999px; margin: -20px 0 0; position: absolute; top: 34%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; }
 .flex-direction-nav .flex-prev {  }
 .flex-direction-nav .flex-next { background-position: -29px 0px; }
 .flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
@@ -514,78 +514,3 @@ height: 27px;
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
