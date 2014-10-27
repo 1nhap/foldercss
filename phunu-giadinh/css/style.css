@@ -41,9 +41,14 @@ body {
 	display: inline-block;
 	width: 345px;
 	height: 89px;
-	background: url(../images/logo.png) no-repeat;
-	text-indent: -99999999px;margin-top: 25px;
+	/*background: url(../images/logo.png) no-repeat;
+	text-indent: -99999999px;margin-top: 25px;*/
 	z-index: 100000000000000000000000;
+}
+#logo img{
+	width: auto;
+  height: auto;
+  max-width: 100%;
 }
 @media only screen and (min-width: 40.063em) {
 .top-bar-section li:not(.has-form) a:not(.button){
