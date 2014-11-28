@@ -62,7 +62,7 @@
 
 				// Currencies
 				currencies = {
-					"USD": { code: "USD", symbol: "&#36;", name: "US Dollar" , accuracy: 2, after: true},
+					"USD": { code: "USD", symbol: "&#36;", name: "US Dollar" , after: true },
 					"AUD": { code: "AUD", symbol: "&#36;", name: "Australian Dollar" },
 					"BRL": { code: "BRL", symbol: "R&#36;", name: "Brazilian Real" },
 					"CAD": { code: "CAD", symbol: "&#36;", name: "Canadian Dollar" },
@@ -82,7 +82,7 @@
 					"SEK": { code: "SEK", symbol: "SEK&nbsp;", name: "Swedish Krona" },
 					"CHF": { code: "CHF", symbol: "CHF&nbsp;", name: "Swiss Franc" },
 					"THB": { code: "THB", symbol: "&#3647;", name: "Thai Baht" },
-					"BTC": { code: "BTC", symbol: " BTC", name: "Bitcoin", accuracy: 4, after: false	}
+					"BTC": { code: "BTC", symbol: " BTC", name: "Bitcoin", accuracy: 2, after: true	}
 				},
 
 				// default options
