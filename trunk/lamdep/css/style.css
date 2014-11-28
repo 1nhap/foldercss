@@ -901,7 +901,61 @@ background: #00a5ea;
 float: left;
 margin-right: 20px;}
 
+div.boxhohokythuat {
+	float: left;
+	width: 100%;
+}
 
+div.boxhohokythuat li {
+	list-style: none;
+	float: left;
+	width: 313px;
+	margin-bottom: 15px;
+}
+
+div.boxhohokythuat ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#boxlienhehotrokt {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+div.avatar-hotrokt {
+	float: left;
+	width: 110px;
+	overflow: hidden;
+	height: 99px;
+	background:
+		url(../images/bg_avatar.png)
+		no-repeat;
+	position: relative;
+}
+
+div.avatar-hotrokt img {
+	float: left;
+	margin-left: 13px;
+	margin-top: 12px;
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+div.info-hotrokt p {
+	font: 13px arial;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	line-height: 22px;
+}
+
+div.info-hotrokt span {
+	color: #f55438;
+}
 
 
 
