@@ -956,8 +956,14 @@ div.info-hotrokt p {
 div.info-hotrokt span {
 	color: #f55438;
 }
-
-
+.zalo{
+	background:url(../img/zalo.png) no-repeat;
+	padding-left:55px;
+}
+.viber{
+	background:url(../img/viber.png) no-repeat;
+	padding-left:55px;
+}
 
 
 
