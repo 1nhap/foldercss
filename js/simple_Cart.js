@@ -723,7 +723,7 @@ function Cart(){
 				return "&#3647;";
 			case USD:
 			case VND:
-				return "VNĐ&nbsp;";
+				return "&nbsp;VNĐ&nbsp;";
 			case CAD:
 			case AUD:
 			case NZD:
