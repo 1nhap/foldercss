@@ -438,9 +438,7 @@ body { /* background: #008fc3 url(../img/page.png); */
 	transform: skew(-13deg, 0);
 	content: "";
 }
-.block_title_color,.block_title_color:after{
-background-color: #C61AF5;
-}
+
 ._rgt .rgt_title {
 	display: block;
 	text-align: center;
@@ -966,7 +964,12 @@ div.info-hotrokt span {
 	background:url(../img/viber.png) left center no-repeat;
 	padding-left:55px;
 }
-
+.block_title_color{
+background-color: #C61AF5;
+}
+.block_title_color:after{
+background-color: #C61AF5;
+}
 
 
 
