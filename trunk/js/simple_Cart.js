@@ -1277,7 +1277,7 @@ function number_format( number, decimals, dec_point, thousands_sep ) {
 
 String.prototype.reverse=function(){return this.split("").reverse().join("");};
 Number.prototype.withCommas=function(){var x=6,y=parseFloat(this).toFixed(0).toString().reverse();while(x<y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}return number_format(y.reverse(),0,'.',',');};
-Number.prototype.toCurrency=function(){return(this.withCommas() + arguments[0]?arguments[0]:"$");};
+Number.prototype.toCurrency=function(){return (this.withCommas() + (arguments[0]?arguments[0]:"$"));};
 
 
 /********************************************************************************************************
