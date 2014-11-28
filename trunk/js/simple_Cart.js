@@ -1268,7 +1268,7 @@ var getElementsByClassName = function (className, tag, elm){
 
 
 String.prototype.reverse=function(){return this.split("").reverse().join("");};
-Number.prototype.withCommas=function(){var x=6,y=parseFloat(this).toFixed(1).toString().reverse();while(x<y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}return y.reverse();};
+Number.prototype.withCommas=function(){var x=6,y=parseFloat(this).toFixed(0).toString().reverse();while(x<y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}return y.reverse();};
 Number.prototype.toCurrency=function(){return(arguments[0]?arguments[0]:"$")+this.withCommas();};
 
 
