@@ -82,7 +82,7 @@
 					"SEK": { code: "SEK", symbol: "SEK&nbsp;", name: "Swedish Krona" },
 					"CHF": { code: "CHF", symbol: "CHF&nbsp;", name: "Swiss Franc" },
 					"THB": { code: "THB", symbol: "&#3647;", name: "Thai Baht" },
-					"BTC": { code: "BTC", symbol: " BTC", name: "Bitcoin", accuracy: 2, after: true	}
+					"BTC": { code: "BTC", symbol: " BTC", name: "Bitcoin", accuracy: 0, after: true	}
 				},
 
 				// default options
