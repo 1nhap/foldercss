@@ -55,7 +55,7 @@ function Cart(){
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
-	me.cartHeaders = ['Name','Price','Quantity','Remove'];
+	me.cartHeaders = ['Name','Price','decrement','Quantity','increment','Remove'];
 	/*
 		cart headers:
 		you can set these to which ever order you would like, and the cart will display the appropriate headers
@@ -723,7 +723,7 @@ function Cart(){
 				return "&#3647;";
 			case USD:
 			case VND:
-				return "VNĐ&nbsp;";
+				return "";
 			case CAD:
 			case AUD:
 			case NZD:
