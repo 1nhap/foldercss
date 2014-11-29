@@ -55,7 +55,7 @@ function Cart(){
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
-	me.cartHeaders = ['Name','Price','Quantity','Total'];
+	me.cartHeaders = ['Name','Price','Quantity','Total','Remove'];
 	/*
 		cart headers:
 		you can set these to which ever order you would like, and the cart will display the appropriate headers
