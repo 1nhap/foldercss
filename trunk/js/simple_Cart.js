@@ -589,7 +589,7 @@ function Cart(){
 			
 				newRow.appendChild( newCell );
 			}
-			newRow.className = "itemContainer";
+			newRow.className = "itemContainer group";
 			newRows[x+1] = newRow;
 		});
 
@@ -626,7 +626,7 @@ function Cart(){
 				outputValue = me.valueToLink( "-" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].decrement();\"" );
 				break;
 			case "remove":
-				outputValue = me.valueToLink( "Remove" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].remove();\"" );
+				outputValue = me.valueToLink( "X" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].remove();\"" );
 				break;
 			case "price":
 				outputValue = me.valueToCurrencyString( item[ info[0].toLowerCase() ] ? item[info[0].toLowerCase()] : " " );
@@ -723,7 +723,7 @@ function Cart(){
 				return "&#3647;";
 			case USD:
 			case VND:
-				return "&nbsp;";
+				return "VNĐ&nbsp;";
 			case CAD:
 			case AUD:
 			case NZD:
