@@ -358,7 +358,6 @@ body { /* background: #008fc3 url(../img/page.png); */
 
 .p_price .view_rgt,.p_price .view_lft {
 	position: absolute;
-	right: 10px;
 	-webkit-transform: skew(-13deg, 0);
 	-moz-transform: skew(-13deg, 0);
 	-ms-transform: skew(-13deg, 0);
@@ -372,6 +371,11 @@ body { /* background: #008fc3 url(../img/page.png); */
 .p_price .view_rgt:hover,.p_price .view_lft:hover {
 	background-color: #00a5ea;
 	color: #fff;
+}
+
+.p_price .view_rgt{
+
+	right: 10px;
 }
 .p_price .view_lft{
 	left:5px;
