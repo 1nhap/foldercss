@@ -334,7 +334,7 @@ function Cart(){
 			itemsName = itemsName + "&return_url=" + me.successUrl;
 		}
 		strn = strn + itemsName;*/
-		window.open (me.entryURL, "_blank");
+		window.open (me.entryURL, "_parent");
 		return;
 	};
 
