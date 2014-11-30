@@ -573,7 +573,15 @@ function Cart(){
 		});
 
       entry_txt +="\n\n - Tổng Tiền: " + number_format(entry_total,0,'.',',') + " (VNĐ)";
-		document.getElementById(me.entry).innerHTML = entry_txt;	
+		
+try {
+    document.getElementById(me.entry).innerHTML = entry_txt;
+}
+catch(err) {
+    
+}
+
+	
 		for( var x=0,xlen=me.cartDivs.length; x<xlen; x++){
 
 			/* delete current rows in div */
