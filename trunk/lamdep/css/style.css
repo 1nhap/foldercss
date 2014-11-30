@@ -975,7 +975,7 @@ background-color: #ff0084;
 .block_title_color:after{
 background-color: #ff0084;
 }
-
+/*
 #dialog {position:absolute; width:425px; padding:10px; z-index:10000;opacity:1;}
 #dialog-header {display:block; position:relative; width:100%; padding:3px 6px 7px; height:25px; font-size:14px; font-weight:bold}
 #dialog-title {float:left}
@@ -990,11 +990,7 @@ background-color: #ff0084;
 .successheader {background:url(https://foldercss.googlecode.com/svn/trunk/images/success_header.gif) repeat-x; color:#3c7f51; border:1px solid #60a174; border-bottom:none}
 .prompt {background:#fff url(https://foldercss.googlecode.com/svn/trunk/images/prompt_bg.jpg) bottom right no-repeat; border:1px solid #4f6d81; border-top:none}
 .promptheader {background:url(https://foldercss.googlecode.com/svn/trunk/images/prompt_header.gif) repeat-x; color:#355468; border:1px solid #4f6d81; border-bottom:none}
-
-
-
-
-
+*/
 .w-giaban,.gia_ban b{color:red;font-size:20px;}
 .tong_cart{
 color: red;
