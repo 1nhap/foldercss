@@ -64,7 +64,8 @@ function showDialog(title,message,type,autohide) {
     dialogmask = document.getElementById('dialog-mask');
     dialogmask.style.visibility = "visible";
     dialog.style.visibility = "visible";
-  }  
+  } 
+  dialog.alpha = 0;
   var width = pageWidth();
   var height = pageHeight();
   var left = leftPosition();
