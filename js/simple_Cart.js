@@ -22,6 +22,7 @@ function Cart(){
 	me.merchantId	 = "";
 	me.successUrl = null;
 	me.cancelUrl = null;
+	me.entry = "";
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
@@ -545,7 +546,13 @@ function Cart(){
 		newRows[0] = newRow;
 
 		/* create a row for each item in the cart */
+		var entry_txt = "";
+		var entry_total = 0;
+
 		me.each(function(item, x){
+         
+			entry_total += item['price'] * item['quantity'];
+			entry_txt += " - " + item['name'] + " -- ( " + number_format(item['price'],0,'.',',') + " x " +  item['quantity'] +" = " + number_format((item['price'] * item['quantity']),0,'.',',') +" )\n";
 			newRow = document.createElement('div');
 
 			for(var y=0,ylen = me.cartHeaders.length; y<ylen; y++ ){
@@ -563,7 +570,8 @@ function Cart(){
 			newRows[x+1] = newRow;
 		});
 
-
+      entry_txt +="\n\n - Tổng Tiền: " + number_format(entry_total,0,'.',',') + " (VNĐ)";
+		document.getElementById(me.entry).innerHTML = entry_txt;	
 
 		for( var x=0,xlen=me.cartDivs.length; x<xlen; x++){
 
