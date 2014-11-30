@@ -66,8 +66,8 @@ function showDialog(title,message,type,autohide) {
     dialog.style.visibility = "visible";
   }
   dialog.style.opacity = .00;
-  dialog.style.filter = 'alpha(opacity=0)';
-  dialog.alpha = 0;
+  dialog.style.filter = 'alpha(opacity=1)';
+  dialog.alpha = 1;
   var width = pageWidth();
   var height = pageHeight();
   var left = leftPosition();
