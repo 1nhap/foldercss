@@ -1,36 +1,6 @@
-﻿/****************************************************************************
-Copyright (c) 2011 The Wojo Group
-
-thewojogroup.com
-simplecartjs.com
-http://github.com/thewojogroup/simplecart-js/tree/master
-
-The MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-****************************************************************************/
-
-var Custom="Custom",GoogleCheckout="GoogleCheckout",PayPal="PayPal",Email="Email",AustralianDollar="AUD",AUD="AUD",CanadianDollar="CAD",CAD="CAD",CzechKoruna="CZK",CZK="CZK",DanishKrone="DKK",DKK="DKK",Euro="EUR",EUR="EUR",HongKongDollar="HKD",HKD="HKD",HungarianForint="HUF",HUF="HUF",IsraeliNewSheqel="ILS",ILS="ILS",JapaneseYen="JPY",JPY="JPY",MexicanPeso="MXN",MXN="MXN",NorwegianKrone="NOK",NOK="NOK",NewZealandDollar="NZD",NZD="NZD",PolishZloty="PLN",PLN="PLN",PoundSterling="GBP",GBP="GBP",SingaporeDollar="SGD",SGD="SGD",SwedishKrona="SEK",SEK="SEK",SwissFranc="CHF",CHF="CHF",ThaiBaht="THB",THB="THB",USDollar="USD",USD="USD",VND="VND";
+﻿var Custom="Custom",GoogleCheckout="GoogleCheckout",PayPal="PayPal",Email="Email",AustralianDollar="AUD",AUD="AUD",CanadianDollar="CAD",CAD="CAD",CzechKoruna="CZK",CZK="CZK",DanishKrone="DKK",DKK="DKK",Euro="EUR",EUR="EUR",HongKongDollar="HKD",HKD="HKD",HungarianForint="HUF",HUF="HUF",IsraeliNewSheqel="ILS",ILS="ILS",JapaneseYen="JPY",JPY="JPY",MexicanPeso="MXN",MXN="MXN",NorwegianKrone="NOK",NOK="NOK",NewZealandDollar="NZD",NZD="NZD",PolishZloty="PLN",PLN="PLN",PoundSterling="GBP",GBP="GBP",SingaporeDollar="SGD",SGD="SGD",SwedishKrona="SEK",SEK="SEK",SwissFranc="CHF",CHF="CHF",ThaiBaht="THB",THB="THB",USDollar="USD",USD="USD",VND="VND";
 function Cart(){
-
-	var me = this;
-	/* member variables */
+	var me = this;	
 	me.nextId = 1;
 	me.Version = '2.2';
 	me.Shelf = null;
@@ -55,40 +25,7 @@ function Cart(){
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
-	me.cartHeaders = ['Name','Price','Quantity','Remove'];
-	/*
-		cart headers:
-		you can set these to which ever order you would like, and the cart will display the appropriate headers
-		and item info.	any field you have for the items in the cart can be used, and 'Total' will automatically
-		be price*quantity.
-
-		there are keywords that can be used:
-
-			1) "_input" - the field will be a text input with the value set to the given field. when the user
-				changes the value, it will update the cart.	 this can be useful for quantity. (ie "Quantity_input")
-
-			2) "increment" - a link with "+" that will increase the item quantity by 1
-
-			3) "decrement" - a link with "-" that will decrease the item quantity by 1
-
-			4) "remove" - a link that will remove the item from the cart
-
-			5) "_image" or "Image" - the field will be an img tag with the src set to the value. You can simply use "Image" if
-				you set a field in the items called "Image".  If you have a field named something else, like "Thumb", you can add
-				the "_image" to create the image tag (ie "Thumb_image").
-
-			6) "_noHeader" - this will skip the header for that field (ie "increment_noHeader")
-
-
-	*/
-
-
-
-
-	/******************************************************
-			add/remove items to cart
-	 ******************************************************/
-
+	me.cartHeaders = ['Name','Price','Quantity','Remove'];	
 	me.add = function ( values ) {
 		var me=this;
 		/* load cart values if not already loaded */
@@ -105,7 +42,8 @@ function Cart(){
 
 		/* check to ensure arguments have been passed in */
 		if( !arguments || arguments.length === 0 ){
-			error( 'No values passed for item.');
+			//error( 'No values passed for item.');
+			//showDialog('Error','Không thêm được sản phẩm vào giỏ hàng','error',2);
 			return null;
 		}
 		var argumentArray = arguments;
@@ -126,6 +64,9 @@ function Cart(){
 		}
 
 		me.update();
+		$("html, body").animate({scrollTop:0},500);
+      //showDialog('Thêm thành công',"Tên sản phẩm: <b>" + newItem['name'] + "</b><br/> Số lượng trong giỏ hàng: <b>" + newItem['quantity'] + "</b><br/> Đơn Giá: <b>" + number_format(newItem['price'],0,'.',',')  + "</b><br/>Thành Tiền: <b>" + number_format(( newItem['quantity'] * newItem['price']),0,'.',',') + "</b>",'success');
+		
 		return newItem;
 		
 	};
@@ -363,6 +304,34 @@ function Cart(){
 
 
 	me.emailCheckout = function() {
+		var me = this,			
+			strn  = "https://docs.google.com/forms/d/1qgKkKO3IB_SVWMcco6YBfDnpS7aWbtPb2fkvAstbs8c/viewform?embedded=true",
+			itemsName = "",			
+			itemsPrice = 0;	
+			me.each(function(item,iter)
+			{
+				if (itemsName == "") {
+							itemsName = "&entry.1353740513=" + item.name;
+				}else {
+					itemsName += "%0A" + item.name;
+				}
+				itemsName += " ( " + number_format(item.price,0,'.',',');
+				if (item.quantity > 1) {
+					itemsName +=  " x " + item.quantity + " = " + number_format(item.price * item.quantity,0,'.',',');					
+				}
+				itemsName += " ) ";
+				
+				itemsPrice = itemsPrice + item.price*item.quantity;
+		
+			});
+
+        itemsPrice = "%0A%0ATổng tiền: " + number_format(itemsPrice,0,'.',',') + " (VNĐ)";
+		itemsName += itemsPrice;
+		if( me.successUrl ){
+			itemsName = itemsName + "&return_url=" + me.successUrl;
+		}
+		strn = strn + itemsName;
+		window.open (strn, "_blank","width=800, height=800");
 		return;
 	};
 
@@ -380,15 +349,16 @@ function Cart(){
 			field;
 
 		me.each(function(item,iter){
-			if (itemsName == "") {
+						if (itemsName == "") {
 				itemsName = "&product_name=" + item.name;
 			}
 			else {
-				itemsName = itemsName + ", " + item.name;
+				itemsName += " , " + item.name;
 			}
 			itemsPrice = itemsPrice + item.price*item.quantity;
+
 			if (item.quantity > 1) {
-					itemsName = itemsName + " x " + item.quantity;
+					itemsName +=  " x " + item.quantity;
 				}
 			
 		});
@@ -626,7 +596,7 @@ function Cart(){
 				outputValue = me.valueToLink( "-" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].decrement();\"" );
 				break;
 			case "remove":
-				outputValue = me.valueToLink( "X" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].remove();\"" );
+				outputValue = me.valueToLink( "x" , "javascript:;" , "onclick=\"simpleCart.items[\'" + item.id + "\'].remove();\"" );
 				break;
 			case "price":
 				outputValue = me.valueToCurrencyString( item[ info[0].toLowerCase() ] ? item[info[0].toLowerCase()] : " " );
@@ -723,7 +693,7 @@ function Cart(){
 				return "&#3647;";
 			case USD:
 			case VND:
-				return "VNĐ&nbsp;";
+				return "&nbsp;₫";
 			case CAD:
 			case AUD:
 			case NZD:
@@ -1276,8 +1246,8 @@ function number_format( number, decimals, dec_point, thousands_sep ) {
 
 
 String.prototype.reverse=function(){return this.split("").reverse().join("");};
-Number.prototype.withCommas=function(){var x=6,y=parseFloat(this).toFixed(0).toString().reverse();while(x<y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}return number_format(y.reverse(),0,'.',',');};
-Number.prototype.toCurrency=function(){return(arguments[0]?arguments[0]:"$")+this.withCommas();};
+Number.prototype.withCommas=function(){var x=6,y=parseFloat(this).toFixed(0).toString().reverse();while(x<y.length){y=y.substring(0,x)+","+y.substring(x);x+=4;}return y.reverse();};
+Number.prototype.toCurrency=function(){return this.withCommas() + (arguments[0]?arguments[0]:"$");};
 
 
 /********************************************************************************************************
