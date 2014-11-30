@@ -109,8 +109,7 @@ function fadeDialog(flag) {
   } else {
     value = dialog.alpha - SPEED;
   }
-  dialog.alpha = value;
-  dialog.style.filter = 'alpha(opacity=' + value + ')';
+  dialog.alpha = value;  
   if(value >= 99) {
     clearInterval(dialog.timer);
     dialog.timer = null;
