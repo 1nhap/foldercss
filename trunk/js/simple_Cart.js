@@ -23,7 +23,7 @@ function Cart(){
 	me.successUrl = null;
 	me.cancelUrl = null;
 	me.entry = "";
-	me.entryURL ="";
+	me.entryURL="";
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
@@ -66,7 +66,7 @@ function Cart(){
 		}
 
 		me.update();
-		$("html, body").animate({scrollTop:0},500);
+	    $("html, body").animate({scrollTop:0},500);
       //showDialog('Thêm thành công',"Tên sản phẩm: <b>" + newItem['name'] + "</b><br/> Số lượng trong giỏ hàng: <b>" + newItem['quantity'] + "</b><br/> Đơn Giá: <b>" + number_format(newItem['price'],0,'.',',')  + "</b><br/>Thành Tiền: <b>" + number_format(( newItem['quantity'] * newItem['price']),0,'.',',') + "</b>",'success');
 		
 		return newItem;
@@ -306,7 +306,34 @@ function Cart(){
 
 
 	me.emailCheckout = function() {
-		var me = this;			
+		var me = this;
+			/*			
+			strn  = "https://docs.google.com/forms/d/1qgKkKO3IB_SVWMcco6YBfDnpS7aWbtPb2fkvAstbs8c/viewform?embedded=true",
+			itemsName = "",			
+			itemsPrice = 0;	
+			me.each(function(item,iter)
+			{
+				if (itemsName == "") {
+							itemsName = "&entry.1353740513=" + item.name;
+				}else {
+					itemsName += "%0A" + item.name;
+				}
+				itemsName += " ( " + number_format(item.price,0,'.',',');
+				if (item.quantity > 1) {
+					itemsName +=  " x " + item.quantity + " = " + number_format(item.price * item.quantity,0,'.',',');					
+				}
+				itemsName += " ) ";
+				
+				itemsPrice = itemsPrice + item.price*item.quantity;
+		
+			});
+
+        itemsPrice = "%0A%0ATổng tiền: " + number_format(itemsPrice,0,'.',',') + " (VNĐ)";
+		itemsName += itemsPrice;
+		if( me.successUrl ){
+			itemsName = itemsName + "&return_url=" + me.successUrl;
+		}
+		strn = strn + itemsName;*/
 		window.open (me.entryURL, "_blank");
 		return;
 	};
@@ -547,7 +574,6 @@ function Cart(){
 
       entry_txt +="\n\n - Tổng Tiền: " + number_format(entry_total,0,'.',',') + " (VNĐ)";
 		document.getElementById(me.entry).innerHTML = entry_txt;	
-
 		for( var x=0,xlen=me.cartDivs.length; x<xlen; x++){
 
 			/* delete current rows in div */
