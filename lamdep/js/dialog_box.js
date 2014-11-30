@@ -64,10 +64,7 @@ function showDialog(title,message,type,autohide) {
     dialogmask = document.getElementById('dialog-mask');
     dialogmask.style.visibility = "visible";
     dialog.style.visibility = "visible";
-  }
-  dialog.style.opacity = .00;
-  dialog.style.filter = 'alpha(opacity=1)';
-  dialog.alpha = 1;
+  }  
   var width = pageWidth();
   var height = pageHeight();
   var left = leftPosition();
@@ -113,7 +110,6 @@ function fadeDialog(flag) {
     value = dialog.alpha - SPEED;
   }
   dialog.alpha = value;
-  dialog.style.opacity = (value / 100);
   dialog.style.filter = 'alpha(opacity=' + value + ')';
   if(value >= 99) {
     clearInterval(dialog.timer);
