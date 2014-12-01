@@ -24,10 +24,12 @@ function Cart(){
 	me.cancelUrl = null;
 	me.entry = "";
 	me.entryURL="";
+	me.entryDelete = false;
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
 	me.cartHeaders = ['Name','Price','decrement','Quantity','increment','total','Remove'];	
+	if(me.entryDelete == true){this.items = {};}
 	me.add = function ( values ) {
 		var me=this;
 		/* load cart values if not already loaded */
