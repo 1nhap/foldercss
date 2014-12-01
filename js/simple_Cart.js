@@ -66,7 +66,7 @@ function Cart(){
 		}
 
 		me.update();
-	    $("html, body").animate({scrollTop:0},500);
+	    $("html, body").animate({scrollTop:0},1000);
       //showDialog('Thêm thành công',"Tên sản phẩm: <b>" + newItem['name'] + "</b><br/> Số lượng trong giỏ hàng: <b>" + newItem['quantity'] + "</b><br/> Đơn Giá: <b>" + number_format(newItem['price'],0,'.',',')  + "</b><br/>Thành Tiền: <b>" + number_format(( newItem['quantity'] * newItem['price']),0,'.',',') + "</b>",'success');
 		
 		return newItem;
