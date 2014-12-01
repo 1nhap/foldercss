@@ -27,7 +27,7 @@ function Cart(){
 	me.cookieDuration = 30; // default duration in days
 	me.storagePrefix = "sc_";
 	me.MAX_COOKIE_SIZE = 4000;
-	me.cartHeaders = ['Name','Price','Quantity','Remove'];	
+	me.cartHeaders = ['Name','Price','decrement','Quantity','increment','total','Remove'];	
 	me.add = function ( values ) {
 		var me=this;
 		/* load cart values if not already loaded */
