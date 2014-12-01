@@ -1,4 +1,4 @@
-imgr = new Array();
+﻿imgr = new Array();
 showRandomImg = true;
 labelnumposts = 101;
 labelnumposts1 = 12;
@@ -91,9 +91,12 @@ function labelproduct(_0x451dx2) {
     j = showRandomImg ? Math['floor']((imgr['length'] + 1) * Math['random']()) : 0;
     img = [];
     for (var _0x451dx3 = 0; _0x451dx3 < labelnumposts; _0x451dx3++) {
+
+		
         var _0x451dx4 = _0x451dx2['feed']['entry'][_0x451dx3],
             _0x451dx5 = _0x451dx4['title']['$t'],
             _0x451dx7;
+		var _idArr = _0x451dx4['id']['$t'].split("post-");		
         if (_0x451dx3 == _0x451dx2['feed']['entry']['length']) {
             break;
         };
@@ -126,7 +129,7 @@ function labelproduct(_0x451dx2) {
         postdate['split']('-');
         for (var _0x451dxa = 0; _0x451dxa < _0x451dx4['length'] && parseInt(_0x451dx9) != _0x451dx4[_0x451dxa]; _0x451dxa++) {;;
         };
-        _0x451dx5 = '<div class="win-6 medium-3 large-3 column item"><div class="box_item simpleCart_shelfItem"><div class="img"><a  href="' + _0x451dx7 + '"><img class="item_thumb" src="' + img[_0x451dx3] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + _0x451dx7 + '" class="item_name">' + removeHtmlTag(_0x451dx5, labelsumtitle) + '</a></div><div class="gia_ban"><b class="item_price">' + giaban + ' </b><b>&nbsp;₫</b></div><div class="p_price"><a href="javascript:void(0);"><span class="item_add view_lft"><i class="fa fa-shopping-cart"></i> Mua</span></a><a href="' + _0x451dx7 + '"><span class="view_rgt"><i class="fa fa-eye"> Chi tiết</i></span></a></div></div></div></div> ';
+        _0x451dx5 = '<div class="win-6 medium-3 large-3 column item"><div class="box_item simpleCart_shelfItem"><div id="img_'+_idArr[1]+'" class="img"><a  href="' + _0x451dx7 + '"><img  class="item_thumb" src="' + img[_0x451dx3] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + _0x451dx7 + '" class="item_name">' + removeHtmlTag(_0x451dx5, labelsumtitle) + '</a></div><div class="gia_ban"><b class="item_price">' + giaban + ' </b><b>&nbsp;₫</b></div><div class="p_price"><a class="addtocart" rel="'+_idArr[1]+'" href="javascript:void(0);"><span class="item_add view_lft"><i class="fa fa-shopping-cart"></i> Mua</span></a><a href="' + _0x451dx7 + '"><span class="view_rgt"><i class="fa fa-eye"> Chi tiết</i></span></a></div></div></div></div> ';
         document['write'](_0x451dx5);
         j++;
     };
