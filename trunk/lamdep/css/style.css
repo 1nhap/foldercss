@@ -289,8 +289,7 @@ body { /* background: #008fc3 url(../img/page.png); */
 }
 
 .item {
-	margin-bottom: 15px;
-	overflow: hidden;
+	margin-bottom: 15px;	
 	margin-top: 0;
 	position: relative;
 }
