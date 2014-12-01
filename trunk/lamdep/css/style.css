@@ -1007,6 +1007,14 @@ background: url(https://foldercss.googlecode.com/svn/trunk/images/btn-nganluong.
 float: right;
 text-indent: -99999px;
 }
+.a_viewcart{
+display: inline-block;
+width: 114px;
+height: 28px;
+background: url(https://foldercss.googlecode.com/svn/trunk/images/bg_viewcart.png) no-repeat;
+float: right;
+text-indent: -99999px;
+}
 .a_thanhtoan{
 display: inline-block;
 width: 119px;
