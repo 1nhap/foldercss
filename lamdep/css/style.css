@@ -1355,7 +1355,7 @@ text-align: justify;
 }}
 div.info-hotrokt p.h_zalo{color: red;}
 
-
+.box_gio_hang{width:800px;margin:0 auto}.box_gio_hang .simpleCart_items{border:1px solid #e2e2e2}.box_gio_hang .itemContainer{clear:both;border-bottom:1px solid #e2e2e2;padding:5px;min-height:55px}.box_gio_hang .cartHeaders{display:none}.box_gio_hang .itemImage{width:80px;float:left}.box_gio_hang .itemName{width:300px;float:left;color:#0046dd}.box_gio_hang .itemPrice{width:100px;float:left;text-align:right;color:red;border-left:1px solid #e2e2e2;padding-right:10px;border-right:1px solid #e2e2e2}.box_gio_hang .itemdecrement{width:55px;float:left;text-align:right;padding-right:10px}.box_gio_hang .itemQuantity{width:35px;float:left;text-align:center}.box_gio_hang .itemincrement{width:55px;float:left;text-align:left;padding-left:10px}.box_gio_hang .itemtotal{float:left;color:red;text-align:right;width:120px;border-left:1px solid #e2e2e2;padding-right:10px;border-right:1px solid #e2e2e2}.box_gio_hang .itemRemove{width:80px;float:right;text-align:center;padding-top:10px}.box_gio_hang .itemRemove a{text-transform:uppercase;color:red;display:inline-block;width:16px;height:16px;background:url(https://foldercss.googlecode.com/svn/trunk/images/trash.png) no-repeat;text-indent:-999999px}.cart_top{text-align:center;color:#fff;background-color:red;clear:both;height:24px;font-weight:700}.cart_top .cName{width:300px;float:left}.cart_top .cPrice{float:left;width:100px}.cart_top .cQuantity{float:left;width:145px;text-align:center}.cart_top .cTotal{width:120px;float:left}
 
 
 
