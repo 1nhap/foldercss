@@ -1066,6 +1066,9 @@ border-bottom: 1px solid #6F6F6F;
 padding-bottom: 6px;}
 .top_web{padding-top:27px;}
 .top_web .fa-phone{font-size:35px;}
+#block .itemdecrement,#block .itemincrement,#block .itemtotal{display: none;}
+
+
 #top_menu{margin-top:0px;}
 #logo {
  text-align: left; 
