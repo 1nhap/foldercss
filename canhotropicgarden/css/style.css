@@ -286,7 +286,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 .panel .right .text {
 	padding: 10px;
 	font-size: 14px;
-	background: url(images/bk_slider_text.jpg) 100% 0 no-repeat;
+	background: url(../images/bk_slider_text.jpg) 100% 0 no-repeat;
 	height: 317px;
 }
 
@@ -300,7 +300,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 
 .panel .right .text p {
 	display: block;
-	background: url(images/bk_dotted.png) 0 0 repeat-x;
+	background: url(../images/bk_dotted.png) 0 0 repeat-x;
 	margin: 0;
 	padding-top: 10px;
 }
@@ -354,12 +354,12 @@ background: url("../images/li.png") 0 12px no-repeat;
 ---------------------------------------------*/
 #colLeft h2.comments {
 	padding-bottom: 20px;
-	background: url(images/bk_separattor_horiz.jpg) 0 100% repeat-x;
+	background: url(../images/bk_separattor_horiz.jpg) 0 100% repeat-x;
 }
 
 #colLeft ul.commentlist {
 	list-style-type: none;
-	background: url(images/bk_separattor_horiz.jpg) 0 100% repeat-x;
+	background: url(../images/bk_separattor_horiz.jpg) 0 100% repeat-x;
 	padding-bottom: 20px;
 	margin-bottom: 15px;
 }
@@ -381,7 +381,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 	left: -1px;
 	width: 12px;
 	height: 12px;
-	background: url(images/bk_comment_top_left.jpg) 0 0 no-repeat;
+	background: url(../images/bk_comment_top_left.jpg) 0 0 no-repeat;
 }
 
 #colLeft ul.commentlist li .text .topRight {
@@ -390,7 +390,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 	right: -1px;
 	width: 12px;
 	height: 12px;
-	background: url(images/bk_comment_top_right.jpg) 0 0 no-repeat;
+	background: url(../images/bk_comment_top_right.jpg) 0 0 no-repeat;
 }
 
 #colLeft ul.commentlist li .text .bottomRight {
@@ -399,7 +399,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 	right: -1px;
 	width: 12px;
 	height: 12px;
-	background: url(images/bk_comment_bottom_right.jpg) 0 0 no-repeat;
+	background: url(../images/bk_comment_bottom_right.jpg) 0 0 no-repeat;
 }
 
 #colLeft ul.commentlist li .text .bottomLeft {
@@ -408,7 +408,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 	left: -1px;
 	width: 12px;
 	height: 12px;
-	background: url(images/bk_comment_bottom_left.jpg) 0 0 no-repeat;
+	background: url(../images/bk_comment_bottom_left.jpg) 0 0 no-repeat;
 }
 
 #colLeft ul.commentlist li .text .bubble {
@@ -417,7 +417,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 	left: 16px;
 	width: 16px;
 	height: 10px;
-	background: url(images/bk_bubble.png) 0 0 no-repeat;
+	background: url(../images/bk_bubble.png) 0 0 no-repeat;
 }
 
 #colLeft ul.commentlist .commentmetadata span {
@@ -447,7 +447,7 @@ background: url("../images/li.png") 0 12px no-repeat;
 }
 
 #colLeft h2.postComment {
-	background: url(images/ico_arrow_post.png) 3px 50% no-repeat;
+	background: url(../images/ico_arrow_post.png) 3px 50% no-repeat;
 	padding-left: 28px;
 }
 
