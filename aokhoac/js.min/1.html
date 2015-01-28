@@ -1,0 +1,29 @@
+<html>
+
+<body>
+	<script type='text/javascript'>
+  try{
+		var l234 = $(location).attr("hostname").split("www.");
+		var check = 0;
+	    if(l234[0] != ""){
+		  for(var index = 0; index &lt; wkey.length; index++) {
+	   			if(CryptoJS.MD5(l234[0]) == wkey[index]){check = 1;}
+	      }
+	      if(check == 0){location.href = "http://www.w3thietkeweb.com";}	
+		}
+		if (!document.getElementById("designed-by")) {
+		    location.href = "http://www.w3thietkeweb.com";
+		}
+		if (!document.getElementById("by-web")) {
+		    location.href = "http://www.w3thietkeweb.com";
+		}else{
+	  		if(document.getElementById("by-web").getAttribute("href") != "http://www.w3thietkeweb.com"){location.href = "http://www.w3thietkeweb.com";}
+	 		if($("#by-web").text() != "W3Thietkeweb.com"){location.href = "http://www.w3thietkeweb.com";}
+		}
+	}
+ 	catch(err) {location.href = "http://www.w3thietkeweb.com";}
+
+</script>
+
+</body>
+</html>
