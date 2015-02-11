@@ -850,7 +850,74 @@ padding-bottom: 6px;}
 .top_web{padding-top:27px;}
 .top_web .fa-phone{font-size:35px;}
 #block .itemdecrement,#block .itemincrement,#block .itemtotal{display: none;}
+div.boxhohokythuat {
+	float: left;
+	width: 100%;
+}
 
+div.boxhohokythuat li {
+	list-style: none;
+	float: left;
+	width: 100%;	
+}
+
+div.boxhohokythuat ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#boxlienhehotrokt {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+div.avatar-hotrokt {
+	float: left;
+	width: 110px;
+	overflow: hidden;
+	height: 99px;
+	background:
+		url(../images/bg_avatar.png)
+		no-repeat;
+	position: relative;
+}
+
+div.avatar-hotrokt img {
+	float: left;
+	margin-left: 13px;
+	margin-top: 12px;
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+div.info-hotrokt p {
+	font: 13px arial;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	line-height: 22px;
+}
+
+div.info-hotrokt span {
+	color: #f55438;
+}
+.zalo{
+	background:url(../img/zalo.png) left center no-repeat;
+	padding-left:55px;
+}
+.viber{
+	background:url(../img/viber.png) left center no-repeat;
+	padding-left:55px;
+}
+.block_title_color{
+background-color: #ff0084;
+}
+.block_title_color:after{
+background-color: #ff0084;
+}
 
 
 
