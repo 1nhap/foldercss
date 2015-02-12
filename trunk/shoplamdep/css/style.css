@@ -188,8 +188,7 @@ margin: 0 10px 0 0;
 	
 }
 .item {
-	margin-bottom: 15px;
-	overflow: hidden;
+	margin-bottom: 15px;	
 	margin-top: 0;
 	position: relative;
 }
@@ -778,7 +777,7 @@ font-weight: bold;}
 display: inline-block;
 width: 100px;
 height: 28px;
-background: url(https://foldercss.googlecode.com/svn/trunk/images/btn-nganluong.png) no-repeat;
+background: url('../images/btn-nganluong.png') no-repeat;
 float: right;
 text-indent: -99999px;
 }
@@ -786,7 +785,7 @@ text-indent: -99999px;
 display: inline-block;
 width: 114px;
 height: 28px;
-background: url(https://foldercss.googlecode.com/svn/trunk/images/bg_viewcart.png) no-repeat;
+background: url('../images/bg_viewcart.png') no-repeat;
 float: right;
 text-indent: -99999px;
 }
@@ -794,7 +793,7 @@ text-indent: -99999px;
 display: inline-block;
 width: 119px;
 height: 28px;
-background: url(https://foldercss.googlecode.com/svn/trunk/images/bg_buycart.png) no-repeat;
+background: url('../images/bg_buycart.png') no-repeat;
 float: left;
 text-indent: -99999px;
 }
@@ -925,7 +924,7 @@ div.info-hotrokt span {
           font-size:20px;
       }
       form .btn_buynow{
-      background: url(https://foldercss.googlecode.com/svn/trunk/images/button-dat-hang-ngay.png) no-repeat;
+      background: url('../images/button-dat-hang-ngay.png') no-repeat;
       width: 160px;
       height: 65px;
       border: none;
@@ -953,7 +952,7 @@ width: 134px;
 height: 37px;
 float: left;
 margin-left: 20px;
-background: url(https://foldercss.googlecode.com/svn/trunk/shoplamdep/images/buy-big.png) no-repeat;
+background: url('../images/buy-big.png') no-repeat;
 padding-top: 11px;
 padding-left: 38px;
 }.btnMore a{color: #fff;
