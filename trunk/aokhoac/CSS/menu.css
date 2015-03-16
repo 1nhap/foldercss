@@ -616,11 +616,10 @@
 		-webkit-box-sizing: border-box
 	}
 	.jetmenu>li>a {
-		padding: 15px 25px
+		padding: 15px 25px;-webkit-transform:none;transform:none;
 	}
 	.jetmenu a {
-		width: 100%;
-		background: #fff;
+		width: 100%;		
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box
@@ -634,8 +633,7 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box
 	}
-	.jetmenu ul.dropdown li {
-		background: #fff !important;
+	.jetmenu ul.dropdown li {		
 		border: none
 	}
 	.jetmenu ul.dropdown>li>a {
