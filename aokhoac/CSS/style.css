@@ -1090,6 +1090,7 @@ height: 48px;
 overflow: hidden;
 }
 	.w-detail{background-color: #fff;box-shadow: 2px 3px 3px #ccc;padding: 10px;}
+.w-detail .th{display: block;}.w-detail .th img{display: block;width:100%;}
 .w-detail .title{
 font-size: 1.2em;
 color: #007DAD;
