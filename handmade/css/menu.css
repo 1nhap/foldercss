@@ -113,7 +113,7 @@
 .jetmenu>li>.megamenu {
 	position: absolute;
 	display: none;
-	background: #0FAC41;
+	background: #FA6F5C
 	width: 25%;
 	top:45px;
 	font-family: arial, sans-serif;
@@ -332,7 +332,7 @@
 	height: 45px;
 	cursor: pointer;
 	color: #fff;
-	background: #0FAC41
+	background: #FA6F5C
 }
 
 .jetmenu>li.showhide span.title {
@@ -387,7 +387,7 @@
 	}
 	.jetmenu a {
 		width: 100%;
-		background: #0FAC41;
+		background: #FA6F5C;
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box
