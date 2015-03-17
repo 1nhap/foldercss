@@ -51,8 +51,7 @@
 	position: absolute;
 	z-index: 99;
 	min-width: 134px;
-	background: #0FAC41
-}
+	background: #FA6F5C;}
 
 .jetmenu ul.dropdown {
 	top:42px
@@ -87,7 +86,7 @@
 }
 
 .jetmenu ul.dropdown li:hover>a {
-	background: #3BBCEE;
+	background: #E45744;
 	color: #fff;
 	
 }
